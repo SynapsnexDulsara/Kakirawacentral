@@ -1,0 +1,76 @@
+body{
+    background-color: #00000000;
+}
+    .cube {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    transform-style: preserve-3d;
+    animation: rotateCube 5s infinite linear;
+    transform: rotateX(-30deg);
+    transition: transform 0s;
+    left: 45%;
+    top: 30vh;
+}
+ 
+.cube:hover {
+    animation-play-state: paused;
+}
+.side {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    border: 10px solid #9900ff;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px #ff00dd;
+}
+.side h2{
+    position: relative;
+    top: 30%;
+    left: 10%;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 6vh;
+    user-select: all;
+}
+.side h2:hover{
+    color: 
+    #ffffff;
+}
+.A {
+    transform: translateZ(180px);
+    background: #00ffcccc;
+}
+
+.B {
+    transform: rotateY(180deg) translateZ(180px);
+    background: #ff00ffcc;
+}
+
+.C {
+    transform: rotateY(90deg) translateZ(180px);
+    background: #00ccffcc;
+}
+
+.D {
+    transform: rotateY(-90deg) translateZ(180px);
+    background: #ffcc00cc;
+}
+
+.E {
+    transform: rotateX(90deg) translateZ(180px);
+    background: #9900ffcc;
+}
+
+.F {
+    transform: rotateX(-90deg) translateZ(180px);
+    background: #ff3300cc;
+}
+
+@keyframes rotateCube {
+    from {
+        transform: rotateY(0deg) rotateX(-30deg);
+    }
+    to {
+        transform: rotateY(360deg) rotateX(-30deg);
+    }
+}

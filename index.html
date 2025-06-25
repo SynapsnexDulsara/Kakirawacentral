@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyberpunk Animation</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="iframe.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+</head>
+<body>
+    <div class="conloader" id="container">
+    <h2 id="start">INITIALIZE SYSTEM</h2>
+    <div id="terminal"></div>
+    <audio id="sound" src="resources/sounds/wel.mp3" preload="auto"></audio>
+  </div>
+
+    <div class="blur"></div>
+    <div class="main_nav">
+        <nav>
+            <ul class="nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="help.html">Help</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="container">
+        <div class="square"></div>
+        <div class="circle"></div>
+        <div class="squarea"></div>
+        <div class="background">
+            <img src="resources/images/default background/5.png" alt="" class="bg F">
+            <img src="resources/images/default background/4.png" alt="" class="bg D">
+            <img src="resources/images/default background/3.png" alt="" class="bg C">
+            <img src="resources/images/default background/2.png" alt="" class="bg B">
+            <div class="text">
+                <h1 class="h1" style="top: -25vh;">CyberFortress</h1>
+            </div>
+            <img src="resources/images/default background/1.png" alt="" class="bg A">
+        </div>
+        <div class="text">
+            <h3 style="top: 17vh;">Next Level Cybersecurity in Sri Lanka</h3>
+        </div>    
+        <p class="box">
+            🔐 Cyber Fortress is Sri Lanka's trusted hub for cybersecurity, protecting businesses, individuals, and institutions from digital threats.
+            🛡️ We offer services like threat detection, vulnerability assessments, incident response, and cybersecurity training.
+            🌐 Let's build a safer cyber future together with cutting-edge tools and practices.
+        </p>
+    </div>
+    <div class="sketchfab-embed-wrapper"> <iframe style="width: 80vh; height: 80vh;" title="Sci Fi Computer Terminal" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/b2c44996b11a41b78e2623f5b5856d6a/embed?autospin=1&autostart=1&preload=1&transparent=1&dnt=1"> </iframe> </div>
+    <div class="gap"></div><div class="gap"></div>
+    <div class="quote" style="height: 400px;">
+        <p>"The Internet is a dangerous place, but with the right knowledge and tools, you can be safe."</p>
+        <h1>– CyberFortress</h1>
+    </div>
+    <div class="gap"></div>
+    <div class="quote" style="height: 200px;">
+        <p>"In the world of cybersecurity, the bad guys are only one step ahead. Our mission is to close that gap."</p>
+        <h1>– CyberFortress</h1>
+    </div>
+    <div class="gap"></div>
+    <div class="quote" style="height: 200px;">
+        <p>"Your security is only as strong as your weakest link."</p>
+        <h1>– UNKNOWN</h1>
+    </div>
+    <div class="gap"></div>
+    <div class="quote" style="height: 200px;">
+        <p>"Protect your data like it’s your life."</p>
+        <h1>– UNKNOWN</h1>
+    </div><div class="gap"></div>
+    <div class="text">
+        <h1 style="position: absolute; top: -10vh;" id="learn">Learn From<br>Experties</h1>
+        
+    </div>
+    <iframe style="height: 500px;" class="quote" width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=9tYLvyQixbRnQ6aF&amp;list=PLIhvC56v63IJIujb5cyE13oLuyORZpdkL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <iframe style="height: 500px;" class="quote" width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=mN6cTrgBPqvJFErO&amp;list=PLIhvC56v63IJ9SYBtdDsNnORfTNFCXR8_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <iframe style="height: 500px;" class="quote" width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=8iLVA9jS4VIx_Z_U&amp;list=PLIhvC56v63IIJZRa3lzK6IeBQOH_VFjUQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <iframe style="height:500px;"  class="quote" width="560" height="315" src="https://www.youtube.com/embed/jq_LZ1RFPfU?si=SRWtJc0sqRkghtjH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <script src="script/alert.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="script/animations.js"></script>
+    <script>
+            gsap.registerPlugin(ScrollTrigger);
+    
+            gsap.to(".box", {
+                scrollTrigger: {
+                  trigger: ".box",
+                  start: "bottom right",
+                  end: "top left",
+                  scrub: true
+                },
+                x: 180,
+                rotation: 100,
+                duration: 100
+              });
+    </script>
+    <script src="script/welcome.js"></script>
+</html>

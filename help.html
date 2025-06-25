@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyberpunk Animation</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+</head>
+<body>
+    <div class="blur"></div>
+    <div class="main_nav">
+        <nav>
+            <ul class="nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="help.html">Help</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="background">
+        <div class="b1"></div>
+        <div class="b2"></div>
+        <div class="b3"></div>
+        <div class="b4"></div>
+    </div>
+    <div class="container">
+        <div class="text">
+            <h1 class="h1">Need some help</h1>
+            <h3>Next Level Cybersecurity in Sri Lanka</h3>
+        </div>
+        <div class="box">
+          <h2>Need Assistance? 🤔💬</h2>
+          <p>
+            🔐 Cyber Fortress is Sri Lanka's trusted hub for cybersecurity, protecting businesses, individuals, and institutions from digital threats.
+            🛡️ We offer services like threat detection, vulnerability assessments, incident response, and cybersecurity training.
+            🌐 Let's build a safer cyber future together with cutting-edge tools and practices.
+            </p>
+        </div>
+        <div class="long-p">
+          <h2>What We Do 🔍💡</h2>
+          <p>At CyberFortress, we specialize in providing cutting-edge **cybersecurity** services, including: </p>
+           <ol> <li><strong>Real-Time Threat Monitoring</strong> 🚨: Detect and neutralize threats before they cause harm.</li>
+            <li><strong>Data Protection</strong> 🔑: Safeguard your sensitive information with advanced encryption and security protocols.</li>
+            <li><strong>Network Security</strong> 🌐: Fortify your systems against hacking attempts, malware, and unauthorized access.</li>
+            <li><strong>Security Audits</strong> 📊: Conduct comprehensive reviews of your systems to identify vulnerabilities and strengthen your defenses.</li>
+            <li><strong>Incident Response</strong> 🚑: Receive swift support when a security breach occurs, minimizing damage and restoring normal operations.</li>
+          </ol>
+          <h2>How to Get Help 🙋‍♂️💬</h2>
+           <p>If you have any questions or need immediate assistance, here’s how you can reach us:</p>
+           <ol> <li><strong>Contact Us</strong> 📞: Visit the **Contact** section of our website to submit a request or ask any questions.</li>
+            <li><strong>FAQs</strong> ❓: Check out our **Frequently Asked Questions** to see if your issue has already been addressed.</li>
+            <li><strong>Live Support</strong> 💬: Chat with our customer support team in real time for fast solutions to your problems.</li>
+          </ol>
+          <h2>Self-Help Resources 📚⚙️</h2>
+          <p>We also provide several resources to help you improve your own cybersecurity practices:</p>
+           <ol> <li><strong>Cybersecurity Blog</strong> 📰: Stay updated with the latest tips and news from the cybersecurity world.</li>
+            <li><strong>Tutorials and Guides</strong> 🎓: Learn how to strengthen your digital security with our easy-to-follow tutorials.</li>
+            <li><strong>Security Tools</strong> 🛠️: Access free tools and resources that can help you stay protected online.</li>
+          </ol>
+           <h2>Get Started 🚀</h2>
+           <p>To protect yourself or your business from cyber threats, start by exploring our services. <br> Sign up today for a **free consultation** 💬 or browse our solutions to find the best fit for your needs.</p>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="script/animations.js"></script>
+    <script>
+        gsap.registerPlugin(ScrollTrigger);
+
+        gsap.to(".box", {
+            scrollTrigger: {
+              trigger: ".box",
+              start: "bottom right",
+              end: "top left",
+              scrub: true
+            },
+            x: 180,
+            rotation: 100,
+            duration: 100
+          });
+    </script>
+</body>
+</html>
